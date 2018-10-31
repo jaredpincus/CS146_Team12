@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Rosario');
+
+:root {
+	--stevens-red: #A32638;
+	--stevens-grey: #9A989A;
+	--stevens-blue: #002D5D;
+	--stevens-orange: #F98E2B;
+	--stevens-beige: #F3DBB3;
+
+	--desktop-min: 1000px;
+	--tablet-min: 400px;
+}
+
+body {
+	font-family: 'Rosario', sans-serif;
+    text-align: center;
+   	background-color: #EFF4FC;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	background-color: var(--stevens-red);
+	padding: 10px;
+	left: 0;
+	bottom: 0;
+
+	font-weight: bold;
+	color: white;
+
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+footer p {
+	margin: 0 10px;
+}
+
+footer #team {
+	text-shadow: 0px 2px black;
+	color: white;
+}
+
+footer #separator {
+	color: var(--stevens-grey);
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1000px) {
+
+}
+
+/* TABLET */
+@media only screen and (max-width: 999px) and (min-width: 500px) {
+
+}
+
+/* MOBILE */
+@media only screen and (max-width: 499px) {
+	footer {
+		flex-direction: column;
+	}
+
+	footer #separator {
+		display: none;
+	}
+}
