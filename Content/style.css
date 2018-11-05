@@ -17,6 +17,20 @@ body {
    	background-color: #EFF4FC;
 }
 
+
+#logo {
+	height: 150px;
+}
+
+#headerBottom { 
+    display: block;
+    border: none;
+    color: white;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#ffffff00));
+}
+
 footer {
 	position: fixed;
 	width: 100%;
@@ -33,6 +47,12 @@ footer {
 	flex-direction: row;
 }
 
+footer span {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
 footer p {
 	margin: 0 10px;
 }
@@ -47,13 +67,19 @@ footer #separator {
 }
 
 /* DESKTOP */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 800px) {
 
 }
 
 /* TABLET */
-@media only screen and (max-width: 999px) and (min-width: 500px) {
+@media only screen and (max-width: 799px) and (min-width: 500px) {
+	footer {
+		flex-direction: column;
+	}
 
+	footer #separator {
+		display: none;
+	}
 }
 
 /* MOBILE */
