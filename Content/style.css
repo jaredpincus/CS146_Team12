@@ -25,6 +25,33 @@ header {
 	background: linear-gradient(to right, transparent, white, transparent);
 }
 
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--stevens-red);
+    overflow-x: hidden;
+    padding-top: 35px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 20px 8px 6px 16px;
+    text-decoration: none;
+		justify-content: left;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #818181;
+}
+
 #headerHeader {
 	display: flex;
 	flex-direction: row;
