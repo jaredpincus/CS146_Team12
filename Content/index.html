@@ -2,53 +2,78 @@
 
 <html>
     <head>
+        <script type="text/javascript" src="scripts.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" href="logo.png">
         <title>CS-146-A Group 12</title>
     </head>
 
-    <!-- insert the navbar when you get a chance-->
-    <div class="sidenav">
-      <a href="#">About</a>
-      <a href="#">Web Programming</a>
-      <a href="#">Project Management</a>
-      <a href="#">Software Engineering</a>
-      <a href="#">HTML</a>
-      <a href="#">CSS</a>
-      <a href="#">HTML Forms</a>
-      <a href="#">Javascript</a>
-    </div>
-
     <body>
-
-
         <header>
-            <span id="headerHeader">
-                <img id="logo" src="logo.png">
-                <span id="headerText">
-                    <h1>Herc's Knowledge Emporium</h1>
-                    <h3>It's stuff for CS-146</h3>
-                </span>
-            </span>
-            <span class="fadingLine"></span>
+          <span id="headerHeader">
+              <img id="logo" src="logo.png">
+              <span id="headerText">
+                  <h1>Herc's Knowledge Emporium</h1>
+                  <h3>It's stuff for CS-146</h3>
+              </span>
+          </span>
+          <span class="fadingLine"></span>
         </header>
+
+        <!--Leave this here it's just there to test the navbar interaction-->
+        <button onclick="myFunction()">Click Me</button>
+
+        <!-- the navbarm, make the links anchor to a page for the body-->
+        <div class="sidenav">
+          <a href="#">About</a>
+
+          <a href="#">Web Programming</a>
+          <ul class = "dropdown">
+            <a href="#">TCP / IP</a>
+            <a href="#">DNS</a>
+            <a href="#">URL</a>
+          </ul>
+
+          <a href="#">Project Management</a>
+          <ul class = "dropdown">
+            <a href="#">HTTP</a>
+            <a href="#">Project Graphs</a>
+            <a href="#">Waterfall Model / Requirements</a>
+          </ul>
+
+          <a href="#">Software Engineering</a>
+          <ul class = "dropdown">
+            <a href="#">Object Orientated Design</a>
+            <a href="#">Blackbox and Whitebox Testing</a>
+          </ul>
+
+          <a href="#">HTML</a>
+          <ul class = "dropdown">
+            <a href="#">Basic Syntax</a>
+            <a href="#">HTML Skeleton</a>
+          </ul>
+
+          <a href="#">CSS</a>
+          <ul class = "dropdown">
+            <a href="#">Basic Syntax</a>
+          </ul>
+        </div>
 
 
         <footer>
-            <span>
-            	<p id="team">CS-146 Group 12</p>
-            	<p id="separator">|</p>
-            </span>
-            <span>
-            	<p>Ryan Byrne</p>
-            	<p>Raj Gadhia</p>
-            </span>
-            <span>
-        	   <p>Jared Pincus</p>
-        	   <p>Miles Rosenberg</p>
-            </span>
+          <span>
+          	<p id="team">CS-146 Group 12</p>
+          	<p id="separator">|</p>
+          </span>
+          <span>
+          	<p>Ryan Byrne</p>
+          	<p>Raj Gadhia</p>
+          </span>
+          <span>
+      	   <p>Jared Pincus</p>
+      	   <p>Miles Rosenberg</p>
+          </span>
         </footer>
-
 
     </body>
 </html>
