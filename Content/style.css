@@ -25,11 +25,11 @@ header {
 	background: linear-gradient(to right, transparent, white, transparent);
 }
 
-.sidenav {
+#sidenav {
     height: 90%;
     width: 220px;
     position: fixed;
-    z-index: 1;
+    z-index: 0;
     top: 0;
     left: 0;
     background-color: var(--stevens-red);
@@ -38,7 +38,7 @@ header {
 }
 
 /* The navigation menu links */
-.sidenav a {
+#sidenav a {
     padding-top: 10%;
 		padding-left: 10%;
     text-decoration: none;
@@ -50,7 +50,7 @@ header {
 
 /* The navigation menu subtopic links */
 
-.sidenav ul a {
+#sidenav ul a {
 	padding-top: 2%;
 	padding-left: 2%;
 	text-decoration: none;
@@ -61,7 +61,7 @@ header {
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+#sidenav a:hover {
     color: #818181;
 }
 
@@ -104,6 +104,8 @@ header {
 footer {
 	position: fixed;
 	width: 100%;
+	z-index: 1;
+
 	background-color: var(--stevens-red);
 	padding: 10px;
 	left: 0;
