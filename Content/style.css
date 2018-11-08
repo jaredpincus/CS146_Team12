@@ -18,11 +18,16 @@ body {
 #wrapper {
 	display: flex;
 	flex-direction: column;
+	min-height: 100%;
 }
 
 #everythingButFooter {
-	flex: 1 0 auto;
-	overflow: auto;
+	flex: stretch;
+}
+
+#otherstuff {
+	display: flex;
+	flex-direction: row;
 }
 
 header {
@@ -36,12 +41,11 @@ header {
 }
 
 #sidenav {
-    height: 90%;
     width: 220px;
-    position: fixed;
     z-index: 0;
     top: 0;
     left: 0;
+    bottom: 0;
     background-color: var(--stevens-red);
     overflow-x: hidden;
     padding-top: 60px;
@@ -49,19 +53,23 @@ header {
 
 /* The navigation menu links */
 #sidenav a {
-    padding-top: 10%;
-		padding-left: 10%;
+    padding-top: 10px;
+	padding-left: 10px;
     text-decoration: none;
-		text-align: left;
+	text-align: left;
     font-size: 20px;
     color: #f1f1f1;
     display: block;
 }
 
+#sidenav ul {
+	margin-top: 5;
+}
+
 /* The navigation menu subtopic links */
 
 #sidenav ul a {
-	padding-top: 2%;
+	padding-top: 0;
 	padding-left: 2%;
 	text-decoration: none;
 	justify-content: left;
@@ -103,8 +111,8 @@ header {
 
 #returnButton {
 	position: fixed;
-	right: 50px;
-	bottom: 50px;
+	right: 10px;
+	bottom: 10px;
 	z-index: 2;
 }
 
@@ -118,8 +126,13 @@ header {
     background: radial-gradient(black 0%, transparent 50%);
 }
 
-footer {
-	position: fixed;
+#content {
+	flex: stretch;
+	width: 100%;
+}
+
+#footer {
+	align-self: flex-end;
 	width: 100%;
 	z-index: 1;
 	clear: both;
@@ -138,22 +151,22 @@ footer {
 	flex-direction: row;
 }
 
-footer span {
+#footer span {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
 
-footer p {
+#footer p {
 	margin: 0 10px;
 }
 
-footer #team {
+#footer #team {
 	text-shadow: 0px 2px black;
 	color: white;
 }
 
-footer #separator {
+#footer #separator {
 	color: var(--stevens-grey);
 }
 
@@ -164,11 +177,11 @@ footer #separator {
 
 /* TABLET */
 @media only screen and (max-width: 799px) and (min-width: 500px) {
-	footer {
+	#footer {
 		flex-direction: column;
 	}
 
-	footer #separator {
+	#footer #separator {
 		display: none;
 	}
 }
@@ -179,11 +192,11 @@ footer #separator {
 		flex-direction: column;
 	}
 
-	footer {
+	#footer {
 		flex-direction: column;
 	}
 
-	footer #separator {
+	#footer #separator {
 		display: none;
 	}
 }
