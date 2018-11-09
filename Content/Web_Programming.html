@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Programming</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!--Nav side bar-->
+    <div class="sidenav">
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <a href="Web_Programming.html">Web Programming</a>
+      <a href="Project_Management.html">Project Management</a>
+      <a href="#">Software Engineering</a>
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+      <a href="#">HTML Forms</a>
+      <a href="#">Javascript</a>
+    </div>
+
+    <header>
+        <span id="headerHeader">
+            <!-- <img id="logo" src="logo.png"> -->
+            <span id="headerText">
+                <h1>Web Programming</h1>
+            </span>
+        </span>
+        <span class="fadingLine"></span>
+    </header>
+
+    <div>
+      <div class="webInfo">
+        <h2>Internet Protocols</h2>
+        <h3>Link Layer</h3>
+        <ul>
+          <li>Responsible for the physical transmission of data across media.</li>
+          <li>Handles packet creation, transmission, reception, error detection, and collisions.</li>
+        </ul>
+        <h3>Internet Layer</h3>
+        <ul>
+          <li>Provides a the best way of connection.</li>
+          <li>Makes use of IP addresses.</li>
+        </ul>
+        <h3>Transport Layer</h3>
+        <ul>
+          <li>Ensures transmissions arrive in order and without error.</li>
+        </ul>
+        <h3>Application Layer</h3>
+        <ul>
+          <li>Protocols that allow applications to interact with Transport Layer.</li>
+          <li>Some protocols include:</li>
+          <ul>
+            <li>HTTP: web communication</li>
+            <li>SSH: secure shell connect to server</li>
+            <li>FTP: File transferring</li>
+            <li>POP/SMTP: Email transfer protocols</li>
+          </ul>
+        </ul>
+      </div>
+      <div class="webInfo">
+        <h2>DNS and URL</h2>
+        <h3>Hostname System</h3>
+        <ul>
+          <li>Developed in the early days of TCP/IP.</li>
+          <li>Hostnames are alphanumeric names assigned to each computer in the system.</li>
+          <li>If an operating system encounters a hostname it consults a host file to find the respective IP address.</li>
+          <li>Works well on smaller systems, but becomes inefficient on larger networks.</li>
+          <li>Multiple computers cannot access the hostfile at the same time.</li>
+        </ul>
+        <h3>Domain Name System (DNS) and URL</h3>
+        <ul>
+          <li>DNS divides a namespace into hierarchical entities called domains.</li>
+          <li>A fully qualified domain name (FQDN) includes the domain name with the hostname.</li>
+          <li>URL stands for Uniform Resource Locators</li>
+          <li>Example: <i>http://www.reddit.com/index.php?page=17#article</i></li>
+          <ul>
+            <li><i>"http://"</i> : protocol</li>
+            <li><i>"www"</i> : 3rd level</li>
+            <li><i>"reddit"</i> : 2nd level</li>
+            <li><i>"com"</i> : top-level domain</li>
+            <li><i>"/index.php"</i> : path</li>
+            <li><i>"?page=17"</i> : query string</li>
+            <li><i>"#article"</i> : fragment</li>
+          </ul>
+        </ul>
+        <h3>HTTP and Browsers</h3>
+        <ul>
+          <li>HTML: hypertext markup language</li>
+          <li>HTTP: hypertext transfer protocol</li>
+          <li>HTTPS uses TLS to secure connection.</li>
+          <li>Both HTML and HTTP were developed at the same time by the same person.</li>
+          <li>Connectionless protocols disconnect from the server after making a request and when the response is ready the connection is re-established.</li>
+          <li>In a stateless protocol the client and server know about each other only during the request. Once the connection is closed they must reconnect as if it was the first time.</li>
+          <li>A request header includes data about client. A response header includes data of server.</li>
+          <li>Client request codes:</li>
+          <ul>
+            <li>GET : retrieves the representation of pages</li>
+            <li>HEAD : same as GET, except without content</li>
+            <li>POST : delivers information to server</li>
+          </ul>
+
+        </ul>
+      </div>
+    </div>
+
+
+    <footer>
+        <span>
+          <p id="team">CS-146 Group 12</p>
+          <p id="separator">|</p>
+        </span>
+        <span>
+          <p>Ryan Byrne</p>
+          <p>Raj Gadhia</p>
+        </span>
+        <span>
+         <p>Jared Pincus</p>
+         <p>Miles Rosenberg</p>
+        </span>
+    </footer>
+
+  </body>
+</html>
