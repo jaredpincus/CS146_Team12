@@ -176,6 +176,27 @@ header {
 	color: var(--stevens-grey);
 }
 
+.webInfo{
+	margin-bottom: 50px;
+	margin-left: 200px;
+}
+
+h3{
+	margin-left: 25px;
+	margin-bottom: 0px;
+	text-align: left;
+}
+ul{
+	margin-top: 5px;
+	margin-bottom: 30px;
+	text-align: left;
+	list-style: none;
+}
+
+li{
+	margin-bottom: 5px;
+}
+
 /* DESKTOP */
 @media only screen and (min-width: 800px) {
 
