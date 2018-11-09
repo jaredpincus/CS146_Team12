@@ -41,46 +41,52 @@ header {
 }
 
 #sidenav {
-    width: 220px;
+    width: 250px;
     z-index: 0;
     top: 0;
     left: 0;
     bottom: 0;
     background-color: var(--stevens-red);
     overflow-x: hidden;
-    padding-top: 60px;
+    padding: 20px 5px 0 5px;
 }
 
 /* The navigation menu links */
-#sidenav a {
-    padding-top: 10px;
-	padding-left: 10px;
+.navGroup a {
     text-decoration: none;
 	text-align: left;
     font-size: 20px;
     color: #f1f1f1;
     display: block;
+    margin-left: 10px;
 }
 
-#sidenav ul {
-	margin-top: 5;
+.navGroup ul {
+	padding-left: 10px;
+	margin-bottom: 10px;
+	margin-top: 5px;
 }
 
 /* The navigation menu subtopic links */
 
-#sidenav ul a {
-	padding-top: 0;
-	padding-left: 2%;
+.navGroup ul > * {
 	text-decoration: none;
-	justify-content: left;
 	font-size: 16px;
 	color: #f1f1f1;
-	display: block;
+	margin-top: 5px;
 }
 
 /* When you mouse over the navigation links, change their color */
-#sidenav a:hover {
-    color: #818181;
+.navGroup a:hover {
+    color: var(--stevens-grey);
+}
+
+.dropdown {
+	display: none;
+}
+
+.navGroup:hover > .dropdown {
+	display: block;
 }
 
 #headerHeader {

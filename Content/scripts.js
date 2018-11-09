@@ -20,13 +20,14 @@ function generateNav() {
 	var inner = false;
 	for (let i = 0; i < locations.length; i ++) {
 		let element = locations[i];
-		let toAdd = "<a href='#" + element.id + "'>" + element.id.split("_").join(" ") + "</a>";
+		let spanStart = element.parentNode.className !== navClass ? "<span class='navGroup'>" : "";
+		let toAdd = spanStart + "<a href='#" + element.id + "'>" + element.id.split("_").join(" ") + "</a>";
 		if (!inner && element.parentNode.className === navClass) {
 			inner = true;
 			out += "<ul class='dropdown'>";
 		} else if (inner && element.parentNode.className !== navClass) {
 			inner = false;
-			out += "</ul>";
+			out += "</ul></span>";
 		}
 		out += toAdd;
 	};
