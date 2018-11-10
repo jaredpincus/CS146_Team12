@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--Nav side bar-->
+    <div class="sidenav">
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <a href="Web_Programming.html">Web Programming</a>
+      <a href="Project_Management.html">Project Management</a>
+      <a href="#">Software Engineering</a>
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+      <a href="#">HTML Forms</a>
+      <a href="#">Javascript</a>
+    </div>
+
+    <header>
+        <span id="headerHeader">
+            <!-- <img id="logo" src="logo.png"> -->
+            <span id="headerText">
+                <h1>CSS</h1>
+            </span>
+        </span>
+        <span class="fadingLine"></span>
+    </header>
+
+    <div>
+      <div class="webInfo">
+        <h2>CSS Styles</h2>
+        <h3>Inline styles</h3>
+        <ul>
+          <li>Style rules placed within an HTML element via the style attribute.</li>
+          <li><i>Example:</i> &lt;h2 style="font-size: 24pt;"&gt; Description &lt;/h2&gt;</li>
+        </ul>
+        <h3>Embedded style sheet</h3>
+        <ul>
+          <li>Style rules placed in a style tag inside the head tag.</li>
+          <li><i>Example:</i> &lt;style&gt; h2 { font-size: 24pt; } &lt;/style&gt;</li>
+        </ul>
+        <h3>External style sheet</h3>
+        <ul>
+          <li>Style rules placed within and external text file with the .css extension.</li>
+          <li>External style sheets are implemented using the link tag.</li>
+          <li><i>Example:</i> &lt;link rel="stylesheet" href="styles.css"/&gt;</li>
+        </ul>
+      </div>
+
+      <div class="webInfo">
+        <h2>Selectors</h2>
+        <h3>Element Selectors</h3>
+        <ul>
+          <li>Select all instances of a give HTML element.</li>
+          <li><i>Example:</i> h2 { font-size: 24pt; }</li>
+        </ul>
+        <h3>Class Selector</h3>
+        <ul>
+          <li>Allows you to simultaneously target different HTML elements regardless of their position in the document.</li>
+          <li><i>Example:</i></li>
+          <li>&lt;style&gt; .first { font-size: 24pt; } &lt;/style&gt;</li>
+          <li>&lt;p class="first"&gt;Reviews&lt;/p&gt;</li>
+        </ul>
+        <h3>Id Selector</h3>
+        <ul>
+          <li>Allows you to target a specific element by an id attribute regardless of type or position.</li>
+          <li><i>Example:</i></li>
+          <li>&lt;style&gt; #first { font-size: 24pt; } &lt;/style&gt;</li>
+          <li>&lt;p id="first"&gt;Reviews&lt;/p&gt;</li>
+        </ul>
+        <h3>Attribute Selector</h3>
+        <ul>
+          <li>Provides a way to select HTML elements either by the presence of an element attribute or value of an attribute.</li>
+          <li><i>Example:</i></li>
+          <li>&lt;style&gt; [title] { font-size: 24pt; } &lt;/style&gt; &nbsp;&nbsp;&nbsp;<i>This will target all elements with a 'title' attribute.</i></li>
+        </ul>
+        <h3>Pseudo Selectors</h3>
+        <ul>
+          <li><u>Pseudo-element selector:</u> Select something that does not exist explicitly as an element in the HTML document by still a recognizeable object.</li>
+          <li><u>Pseudo-class selector:</u> Applies to an HTML element, but targets either a particular state, or a variety of family relationships.</li>
+          <li>Pseudo-element and Pseudo-class selectors:</li>
+          <ul>
+            <li>a:link</li>
+            <li>a:visited</li>
+            <li>:focus</li>
+            <li>:hover</li>
+            <li>:active</li>
+            <li>:checked</li>
+            <li>::first-child</li>
+            <li>::first-letter</li>
+            <li>::first-line</li>
+          </ul>
+        </ul>
+      </div>
+
+      <div class="webInfo">
+        <h2></h2>
+      </div>
+    </div>
+
+    <div id="footer">
+      <span>
+        <p id="team">CS-146 Group 12</p>
+        <p id="separator">|</p>
+      </span>
+      <span>
+        <p>Ryan Byrne</p>
+        <p>Raj Gadhia</p>
+      </span>
+      <span>
+       <p>Jared Pincus</p>
+       <p>Miles Rosenberg</p>
+      </span>
+    </div>
+
+  </body>
+</html>
