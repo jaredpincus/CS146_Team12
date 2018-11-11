@@ -32,395 +32,395 @@
             <button onclick="myFunction()">Click Me</button>-->
         </div>
 
-        <div id="topnav" class = "navtop">
-          <ul>
-            <li><a href="default.asp">Home</a></li>
-            <li><a href="news.asp">News</a></li>
-            <li><a href="contact.asp">Contact</a></li>
-            <li><a href="about.asp">About</a></li>
-          </ul>
+        <div class="topnav" id="myTopnav">
+          <a href="#home" class="active">Home</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
 
         <div id="content">
 
         <span id="Web_Programming" class="navLoc">
-            <h1>Web Programming</h1>
-            <div class="webInfo navLoc" id="Internet_Protocols">
-        <h2>Internet Protocols</h2>
-        <h3>Link Layer</h3>
-        <ul>
-          <li>Responsible for the physical transmission of data across media.</li>
-          <li>Handles packet creation, transmission, reception, error detection, and collisions.</li>
-        </ul>
-        <h3>Internet Layer</h3>
-        <ul>
-          <li>Provides a the best way of connection.</li>
-          <li>Makes use of IP addresses.</li>
-        </ul>
-        <h3>Transport Layer</h3>
-        <ul>
-          <li>Ensures transmissions arrive in order and without error.</li>
-        </ul>
-        <h3>Application Layer</h3>
-        <ul>
-          <li>Protocols that allow applications to interact with Transport Layer.</li>
-          <li>Some protocols include:</li>
-          <ul>
-            <li>HTTP: web communication</li>
-            <li>SSH: secure shell connect to server</li>
-            <li>FTP: File transferring</li>
-            <li>POP/SMTP: Email transfer protocols</li>
-          </ul>
-        </ul>
-      </div>
-      <div class="webInfo navLoc" id="DNS_and_URL">
-        <h2>DNS and URL</h2>
-        <h3>Hostname System</h3>
-        <ul>
-          <li>Developed in the early days of TCP/IP.</li>
-          <li>Hostnames are alphanumeric names assigned to each computer in the system.</li>
-          <li>If an operating system encounters a hostname it consults a host file to find the respective IP address.</li>
-          <li>Works well on smaller systems, but becomes inefficient on larger networks.</li>
-          <li>Multiple computers cannot access the hostfile at the same time.</li>
-        </ul>
-        <h3>Domain Name System (DNS) and URL</h3>
-        <ul>
-          <li>DNS divides a namespace into hierarchical entities called domains.</li>
-          <li>A fully qualified domain name (FQDN) includes the domain name with the hostname.</li>
-          <li>URL stands for Uniform Resource Locators</li>
-          <li>Example: <i>http://www.reddit.com/index.php?page=17#article</i></li>
-          <ul>
-            <li><i>"http://"</i> : protocol</li>
-            <li><i>"www"</i> : 3rd level</li>
-            <li><i>"reddit"</i> : 2nd level</li>
-            <li><i>"com"</i> : top-level domain</li>
-            <li><i>"/index.php"</i> : path</li>
-            <li><i>"?page=17"</i> : query string</li>
-            <li><i>"#article"</i> : fragment</li>
-          </ul>
-        </ul>
-        <h3>HTTP and Browsers</h3>
-        <ul>
-          <li>HTML: hypertext markup language</li>
-          <li>HTTP: hypertext transfer protocol</li>
-          <li>HTTPS uses TLS to secure connection.</li>
-          <li>Both HTML and HTTP were developed at the same time by the same person.</li>
-          <li>Connectionless protocols disconnect from the server after making a request and when the response is ready the connection is re-established.</li>
-          <li>In a stateless protocol the client and server know about each other only during the request. Once the connection is closed they must reconnect as if it was the first time.</li>
-          <li>A request header includes data about client. A response header includes data of server.</li>
-          <li>Client request codes:</li>
-          <ul>
-            <li>GET : retrieves the representation of pages</li>
-            <li>HEAD : same as GET, except without content</li>
-            <li>POST : delivers information to server</li>
-          </ul>
-
-        </ul>
-      </div>
+          <h1>Web Programming</h1>
+          <div class="webInfo navLoc" id="Internet_Protocols">
+            <h2>Internet Protocols</h2>
+            <h3>Link Layer</h3>
+            <ul>
+              <li>Responsible for the physical transmission of data across media.</li>
+              <li>Handles packet creation, transmission, reception, error detection, and collisions.</li>
+            </ul>
+            <h3>Internet Layer</h3>
+              <ul>
+                <li>Provides a the best way of connection.</li>
+                <li>Makes use of IP addresses.</li>
+              </ul>
+            <h3>Transport Layer</h3>
+            <ul>
+              <li>Ensures transmissions arrive in order and without error.</li>
+            </ul>
+            <h3>Application Layer</h3>
+            <ul>
+              <li>Protocols that allow applications to interact with Transport Layer.</li>
+              <li>Some protocols include:</li>
+              <ul>
+                <li>HTTP: web communication</li>
+                <li>SSH: secure shell connect to server</li>
+                <li>FTP: File transferring</li>
+                <li>POP/SMTP: Email transfer protocols</li>
+              </ul>
+            </ul>
+          </div>
+          <div class="webInfo navLoc" id="DNS_and_URL">
+            <h2>DNS and URL</h2>
+            <h3>Hostname System</h3>
+            <ul>
+              <li>Developed in the early days of TCP/IP.</li>
+              <li>Hostnames are alphanumeric names assigned to each computer in the system.</li>
+              <li>If an operating system encounters a hostname it consults a host file to find the respective IP address.</li>
+              <li>Works well on smaller systems, but becomes inefficient on larger networks.</li>
+              <li>Multiple computers cannot access the hostfile at the same time.</li>
+            </ul>
+            <h3>Domain Name System (DNS) and URL</h3>
+            <ul>
+              <li>DNS divides a namespace into hierarchical entities called domains.</li>
+              <li>A fully qualified domain name (FQDN) includes the domain name with the hostname.</li>
+              <li>URL stands for Uniform Resource Locators</li>
+              <li>Example: <i>http://www.reddit.com/index.php?page=17#article</i></li>
+              <ul>
+                <li><i>"http://"</i> : protocol</li>
+                <li><i>"www"</i> : 3rd level</li>
+                <li><i>"reddit"</i> : 2nd level</li>
+                <li><i>"com"</i> : top-level domain</li>
+                <li><i>"/index.php"</i> : path</li>
+                <li><i>"?page=17"</i> : query string</li>
+                <li><i>"#article"</i> : fragment</li>
+              </ul>
+            </ul>
+            <h3>HTTP and Browsers</h3>
+            <ul>
+              <li>HTML: hypertext markup language</li>
+              <li>HTTP: hypertext transfer protocol</li>
+              <li>HTTPS uses TLS to secure connection.</li>
+              <li>Both HTML and HTTP were developed at the same time by the same person.</li>
+              <li>Connectionless protocols disconnect from the server after making a request and when the response is ready the connection is re-established.</li>
+              <li>In a stateless protocol the client and server know about each other only during the request. Once the connection is closed they must reconnect as if it was the first time.</li>
+              <li>A request header includes data about client. A response header includes data of server.</li>
+              <li>Client request codes:</li>
+              <ul>
+                <li>GET : retrieves the representation of pages</li>
+                <li>HEAD : same as GET, except without content</li>
+                <li>POST : delivers information to server</li>
+              </ul>
+            </ul>
+          </div>
         </span>
 
         <span id="Project_Management" class="navLoc">\
             <h1>Project Management</h1>
             <div class="webInfo navLoc" id="Projects">
-        <h2>Projects</h2>
-        <h3>What is a project?</h3>
-        <ul>
-          <li>A project is unique, temporary, requires resources, and has uncertainty and stakeholders.</li>
-          <li>Most effort is put forth during the middle of the projects life.</li>
-          <li>Most uncertainty exists at the end of the project.</li>
-        </ul>
-        <h3>Project Lifecycle</h3>
-        <ul>
-          <li>The most basic model for a project is the waterfall model.</li>
-          <li>In the waterfall model you only work forwards and do not go backwards in stages.</li>
-          <li>In CS the waterfall model is typically represented by:</li>
-          <ul>
-            <li>Inception</li>
-            <li>Requirements</li>
-            <li>Analysis</li>
-            <li>Design</li>
-            <li>Implementation</li>
-            <li>Testing/Debugging</li>
-            <li>Production</li>
-            <li>Distribution</li>
-            <li>Maintenance</li>
-          </ul>
-          <li>The Project Manager is responsible for organizing these steps properly and planning the schedule.</li>
-        </ul>
-      </div>
-      <div class="webInfo navLoc" id="Project_Managers">
-        <h2>Project Managers</h2>
-        <h3>The Vital Dozen</h3>
-        <ul>
-          <li><i>Understand</i> the context of project management.</li>
-          <li><i>Recognize</i> project team conflict as progress.</li>
-          <li><i>Understand</i> who the stakeholders are and what they want.</li>
-          <li><i>Accept</i> and use the political nature of organizations.</li>
-          <li><i>Lead</i> from the front.</li>
-          <li><i>Understand </i> what "success" means.</li>
-          <li><i>Build</i> and maintain a cohesive team.</li>
-          <li><i>Enthusiasm</i> and despair are both infectious.</li>
-          <li><i>One look </i>forward is worth two looks back.</li>
-          <li><i>Remember </i>what you are trying to do.</li>
-          <li><i>Use time </i>carefully or it will use you.</li>
-          <li><i>Above all, </i>plan, plan, plan.</li>
-        </ul>
-      </div>
-      <div class="webInfo navLoc" id="The_Waterfall_Model">
-        <h2>The Waterfall Model</h2>
-        <h3>Phases</h3>
-        <ul>
-          <li><u>Requirement Gathering and Analysis:</u></li>
-          <ul>
-            <li>All the requirements of the project are captured in this phase.</li>
-            <li>The requirements are documented in a requirement specification doc.</li>
-            <li>The requirements doc must address these four key points:</li>
-            <ul>
-              <li>- Discription of the problem</li>
-              <li>- Basic approach of solution</li>
-              <li>- Constraints (time, budget, etc)</li>
-              <li>- How success will be measured</li>
-            </ul>
-          </ul>
-          <li><u>System Design</u></li>
-          <ul>
-            <li>The requirements from the previous phase are studied in this phase and designing begins.</li>
-            <li>Helps to specify hardware that may need to be required and helps define the overall architecture.</li>
-          </ul>
-          <li><u>Implementation</u></li>
-          <ul>
-            <li>Using inputs from the system design, small programs called units are developed.</li>
-            <li>Each unit is tested for functionality and are integrated into the next phase.</li>
-          </ul>
-          <li><u>Integration and Testing</u></li>
-          <ul>
-            <li>All the units from the previous phase are integrated into a system.</li>
-            <li>The created system is then tested for faults and errors.</li>
-          </ul>
-          <li><u>Deployment of System</u></li>
-          <ul>
-            <li>Once all testing and debugging is completed, the system can then be deployed to customers or the market.</li>
-          </ul>
-          <li><u>Maintenance</u></li>
-          <ul>
-            <li>Issues may arrise once the system is deployed to the customer environment.</li>
-            <li>This phase releases patches and updates to these issues.</li>
-          </ul>
-        </ul>
+              <h2>Projects</h2>
+              <h3>What is a project?</h3>
+              <ul>
+                <li>A project is unique, temporary, requires resources, and has uncertainty and stakeholders.</li>
+                <li>Most effort is put forth during the middle of the projects life.</li>
+                <li>Most uncertainty exists at the end of the project.</li>
+              </ul>
+              <h3>Project Lifecycle</h3>
+              <ul>
+                <li>The most basic model for a project is the waterfall model.</li>
+                <li>In the waterfall model you only work forwards and do not go backwards in stages.</li>
+                <li>In CS the waterfall model is typically represented by:</li>
+                <ul>
+                  <li>Inception</li>
+                  <li>Requirements</li>
+                  <li>Analysis</li>
+                  <li>Design</li>
+                  <li>Implementation</li>
+                  <li>Testing/Debugging</li>
+                  <li>Production</li>
+                  <li>Distribution</li>
+                  <li>Maintenance</li>
+                </ul>
+                <li>The Project Manager is responsible for organizing these steps properly and planning the schedule.</li>
+              </ul>
+            </div>
+            <div class="webInfo navLoc" id="Project_Managers">
+              <h2>Project Managers</h2>
+              <h3>The Vital Dozen</h3>
+              <ul>
+                <li><i>Understand</i> the context of project management.</li>
+                <li><i>Recognize</i> project team conflict as progress.</li>
+                <li><i>Understand</i> who the stakeholders are and what they want.</li>
+                <li><i>Accept</i> and use the political nature of organizations.</li>
+                <li><i>Lead</i> from the front.</li>
+                <li><i>Understand </i> what "success" means.</li>
+                <li><i>Build</i> and maintain a cohesive team.</li>
+                <li><i>Enthusiasm</i> and despair are both infectious.</li>
+                <li><i>One look </i>forward is worth two looks back.</li>
+                <li><i>Remember </i>what you are trying to do.</li>
+                <li><i>Use time </i>carefully or it will use you.</li>
+                <li><i>Above all, </i>plan, plan, plan.</li>
+              </ul>
+            </div>
+            <div class="webInfo navLoc" id="The_Waterfall_Model">
+              <h2>The Waterfall Model</h2>
+              <h3>Phases</h3>
+              <ul>
+                <li><u>Requirement Gathering and Analysis:</u></li>
+                <ul>
+                  <li>All the requirements of the project are captured in this phase.</li>
+                  <li>The requirements are documented in a requirement specification doc.</li>
+                  <li>The requirements doc must address these four key points:</li>
+                  <ul>
+                    <li>- Discription of the problem</li>
+                    <li>- Basic approach of solution</li>
+                    <li>- Constraints (time, budget, etc)</li>
+                    <li>- How success will be measured</li>
+                  </ul>
+                </ul>
+                <li><u>System Design</u></li>
+                <ul>
+                  <li>The requirements from the previous phase are studied in this phase and designing begins.</li>
+                  <li>Helps to specify hardware that may need to be required and helps define the overall architecture.</li>
+                </ul>
+                <li><u>Implementation</u></li>
+                <ul>
+                  <li>Using inputs from the system design, small programs called units are developed.</li>
+                  <li>Each unit is tested for functionality and are integrated into the next phase.</li>
+                </ul>
+                <li><u>Integration and Testing</u></li>
+                <ul>
+                  <li>All the units from the previous phase are integrated into a system.</li>
+                  <li>The created system is then tested for faults and errors.</li>
+                </ul>
+                <li><u>Deployment of System</u></li>
+                <ul>
+                  <li>Once all testing and debugging is completed, the system can then be deployed to customers or the market.</li>
+                </ul>
+                <li><u>Maintenance</u></li>
+                <ul>
+                  <li>Issues may arrise once the system is deployed to the customer environment.</li>
+                  <li>This phase releases patches and updates to these issues.</li>
+                </ul>
+              </ul>
 
-      </div>
+            </div>
         </span>
-
         <span id="Software_Engineering" class="navLoc">
             <h1>Software Engineering</h1>
             <div class="webInfo navLoc" id="System_Design">
-        <h2>System Design</h2>
-        <h3>Object Oriented Design</h3>
-        <ul>
-          <li>Encapsulation</li>
-          <ul>
-            <li>The grouping of related ideas into one unit and then can be referenced by a single name.</li>
-            <li>Encapsulation allows abstracting which hides things away from the user when they do not need to know how it operates.</li>
-          </ul>
-          <li>Inheritance</li>
-            <ul>
-              <li>Inheritance occurs when subclasses are derived from parent classes and act as refinements of the parent.</li>
-              <li>This is done so code does not become repetitive.</li>
-            </ul>
-          <li>Polymorphism</li>
-          <ul>
-            <li>The ability for an object to take on many forms.</li>
-            <li>Most common use is when a parent class references a child class object.</li>
-          </ul>
-        </ul>
-      </div>
+              <h2>System Design</h2>
+              <h3>Object Oriented Design</h3>
+              <ul>
+                <li>Encapsulation</li>
+                <ul>
+                  <li>The grouping of related ideas into one unit and then can be referenced by a single name.</li>
+                  <li>Encapsulation allows abstracting which hides things away from the user when they do not need to know how it operates.</li>
+                </ul>
+                <li>Inheritance</li>
+                  <ul>
+                    <li>Inheritance occurs when subclasses are derived from parent classes and act as refinements of the parent.</li>
+                    <li>This is done so code does not become repetitive.</li>
+                  </ul>
+                <li>Polymorphism</li>
+                <ul>
+                  <li>The ability for an object to take on many forms.</li>
+                  <li>Most common use is when a parent class references a child class object.</li>
+                </ul>
+              </ul>
+            </div>
 
-      <div class="webInfo navLoc" id="Testing">
-        <h2>Testing</h2>
-        <h3>Testing vs Debugging</h3>
-        <ul>
-          <li>Testing is the means of determining if a bug exists.</li>
-          <li>Debugging is the process of trying to find the bug in the code.</li>
-        </ul>
-        <h3>Types of Errors</h3>
-        <ul>
-          <li>Syntax Errors</li>
-          <ul>
-            <li>Occurs when a typo exists.</li>
-            <li>Easiest to find since they are picked up during compilation.</li>
-          </ul>
-          <li>Run-time Errors</li>
-          <ul>
-            <li>Program crashes during execution.</li>
-            <li>An example of this is a divides by zero error.</li>
-          </ul>
-          <li>Logic Errors</li>
-          <ul>
-            <li>Hardest errors to pick up.</li>
-            <li>Program does not crash, but instead gives the wrong output.</li>
-            <li>Results from incorrect thought processes.</li>
-          </ul>
-        </ul>
-        <h3>Types of Testing</h3>
-        <ul>
-          <li><u>Unit Testing:</u> Also known as component testing, verifies functionality of a secific section of code.</li>
-          <li><u>Integration Testing:</u> Seeks to verify the interfaces betwen components (modules) against a software design.</li>
-          <li><u>Component Interface Testing:</u> Checks handling of data between system components.</li>
-          <li><u>System Testing:</u> Tests a completely integrated system.</li>
-          <li><u>Acceptance Testing:</u> Sponsor validates the system is up to par and is what was asked.</li>
-        </ul>
-        <h3>Testing approaches</h3>
-        <ul>
-          <li>Black-box testing</li>
-          <ul>
-            <li>- Testing without knowledge on how the method works</li>
-            <li></li>- Just tests inputs/outputs
-          </ul>
-          <li>White-box testing</li>
-          <ul>
-            <li>Tests every line of code in program</li>
-            <li>Checks internal workings of an application as opposed to functionality</li>
-          </ul>
-        </ul>
-      </div>
+            <div class="webInfo navLoc" id="Testing">
+              <h2>Testing</h2>
+              <h3>Testing vs Debugging</h3>
+              <ul>
+                <li>Testing is the means of determining if a bug exists.</li>
+                <li>Debugging is the process of trying to find the bug in the code.</li>
+              </ul>
+              <h3>Types of Errors</h3>
+              <ul>
+                <li>Syntax Errors</li>
+                <ul>
+                  <li>Occurs when a typo exists.</li>
+                  <li>Easiest to find since they are picked up during compilation.</li>
+                </ul>
+                <li>Run-time Errors</li>
+                <ul>
+                  <li>Program crashes during execution.</li>
+                  <li>An example of this is a divides by zero error.</li>
+                </ul>
+                <li>Logic Errors</li>
+                <ul>
+                  <li>Hardest errors to pick up.</li>
+                  <li>Program does not crash, but instead gives the wrong output.</li>
+                  <li>Results from incorrect thought processes.</li>
+                </ul>
+              </ul>
+              <h3>Types of Testing</h3>
+              <ul>
+                <li><u>Unit Testing:</u> Also known as component testing, verifies functionality of a secific section of code.</li>
+                <li><u>Integration Testing:</u> Seeks to verify the interfaces betwen components (modules) against a software design.</li>
+                <li><u>Component Interface Testing:</u> Checks handling of data between system components.</li>
+                <li><u>System Testing:</u> Tests a completely integrated system.</li>
+                <li><u>Acceptance Testing:</u> Sponsor validates the system is up to par and is what was asked.</li>
+              </ul>
+              <h3>Testing approaches</h3>
+              <ul>
+                <li>Black-box testing</li>
+                <ul>
+                  <li>- Testing without knowledge on how the method works</li>
+                  <li></li>- Just tests inputs/outputs
+                </ul>
+                <li>White-box testing</li>
+                <ul>
+                  <li>Tests every line of code in program</li>
+                  <li>Checks internal workings of an application as opposed to functionality</li>
+                </ul>
+              </ul>
+            </div>
         </span>
 
         <span id="HTML" class="navLoc">
             <h1>HTML</h1>
-      <div class="webInfo navLoc" id="Structure">
-        <h3>Structure</h3>
-        <ul>
-          <li><i>&lt;html&gt;</i> contains all other HTML elements in the document</li>
-          <li><i>&lt;head&gt;</i> contains descriptive elements about the document</li>
-          <li><i>&lt;body&gt;</i> contains content to be displayed by the browser</li>
-          <li><i>&lt;meta&gt;</i> declares the character encoding is UTF-8</li>
-          <li><i>&lt;link&gt;</i> specifies external css file</li>
-          <li><i>&lt;script&gt;</i> specifies external JavaScript file</li>
-        </ul>
-      </div>
-      <div class="webInfo navLoc" id="Elements">
-        <h3>Elements</h3>
-        <ul>
-          <li><i>&lt;p&gt;</i> container for text and other HTML elements</li>
-          <li><i>&lt;div&gt;</i> container element used for logical grouping of content</li>
-          <li><i>&lt;a&gt;</i> anchor element used when adding links to a page</li>
-        </ul>
-      </div>
-      <div class="webInfo navLoc" id="Special_Character_Entities">
-        <h3>Special Character Entities</h3>
-        <ul>
-          <li>Can get special symbols by typing "&" followed by one of the following strings:</li>
-          <li><i>nbsp;</i> nonbreakable space &nbsp;</li>
-          <li><i>lt;</i> less than symbol &lt;</li>
-          <li><i>gt;</i> greater than symbol &gt;</li>
-          <li><i>copy;</i> copyright symbol &copy;</li>
-          <li><i>trade;</i> trademark symbol &trade;</li>
-        </ul>
-      </div>
-      <div class="webInfo navLoc" id="List_Elements">
-        <h3>List Elements</h3>
-        <ul>
-          <li><i>&lt;ul&gt;</i> unordered list</li>
-          <li><i>&lt;ol&gt;</i> ordered list</li>
-          <li><i>&lt;dl&gt;</i> description list</li>
-          <li><i>&lt;li&gt;</i> list item</li>
-        </ul>
-      </div>
-      <div class="webInfo navLoc" id="Tables">
-        <h3>Tables</h3>
-        <ul>
-          <li><i>&lt;table&gt;</i> defines a table</li>
-          <li><i>&lt;tr&gt;</i> defines a table row</li>
-          <li><i>&lt;th&gt;</i> defines a table header</li>
-          <li><i>&lt;td&gt;</i> defines table data/cell</li>
-          <li><i>&lt;caption&gt;</i> adds a caption to a table</li>
-          <li>To make a cell span more than one column use the attribute <i>colspan</i></li>
-          <li>To make a cell span more than one row use the attribute <i>rowspan</i></li>
-        </ul>
-      </div>
-      <div class="webInfo navLoc" id="Semantic_Structure_Elements">
-        <h3>Semantic Structure Elements</h3>
-        <ul>
-          <li><i>&lt;header&gt;</i> contains the documents heading</li>
-          <li><i>&lt;main&gt;</i> contains the main unique content of the document</li>
-          <li><i>&lt;section&gt;</i> broad element for larger sections of content</li>
-          <li><i>&lt;article&gt;</i> used for blocks of content that can be read</li>
-          <li><i>&lt;aside&gt;</i> used for sidebars or grouping of nonessential elements like ads</li>
-        </ul>
-      </div>
+            <div class="webInfo navLoc" id="Structure">
+              <h3>Structure</h3>
+              <ul>
+                <li><i>&lt;html&gt;</i> contains all other HTML elements in the document</li>
+                <li><i>&lt;head&gt;</i> contains descriptive elements about the document</li>
+                <li><i>&lt;body&gt;</i> contains content to be displayed by the browser</li>
+                <li><i>&lt;meta&gt;</i> declares the character encoding is UTF-8</li>
+                <li><i>&lt;link&gt;</i> specifies external css file</li>
+                <li><i>&lt;script&gt;</i> specifies external JavaScript file</li>
+              </ul>
+            </div>
+            <div class="webInfo navLoc" id="Elements">
+              <h3>Elements</h3>
+              <ul>
+                <li><i>&lt;p&gt;</i> container for text and other HTML elements</li>
+                <li><i>&lt;div&gt;</i> container element used for logical grouping of content</li>
+                <li><i>&lt;a&gt;</i> anchor element used when adding links to a page</li>
+              </ul>
+            </div>
+            <div class="webInfo navLoc" id="Special_Character_Entities">
+              <h3>Special Character Entities</h3>
+              <ul>
+                <li>Can get special symbols by typing "&" followed by one of the following strings:</li>
+                <li><i>nbsp;</i> nonbreakable space &nbsp;</li>
+                <li><i>lt;</i> less than symbol &lt;</li>
+                <li><i>gt;</i> greater than symbol &gt;</li>
+                <li><i>copy;</i> copyright symbol &copy;</li>
+                <li><i>trade;</i> trademark symbol &trade;</li>
+              </ul>
+            </div>
+            <div class="webInfo navLoc" id="List_Elements">
+              <h3>List Elements</h3>
+              <ul>
+                <li><i>&lt;ul&gt;</i> unordered list</li>
+                <li><i>&lt;ol&gt;</i> ordered list</li>
+                <li><i>&lt;dl&gt;</i> description list</li>
+                <li><i>&lt;li&gt;</i> list item</li>
+              </ul>
+            </div>
+            <div class="webInfo navLoc" id="Tables">
+              <h3>Tables</h3>
+              <ul>
+                <li><i>&lt;table&gt;</i> defines a table</li>
+                <li><i>&lt;tr&gt;</i> defines a table row</li>
+                <li><i>&lt;th&gt;</i> defines a table header</li>
+                <li><i>&lt;td&gt;</i> defines table data/cell</li>
+                <li><i>&lt;caption&gt;</i> adds a caption to a table</li>
+                <li>To make a cell span more than one column use the attribute <i>colspan</i></li>
+                <li>To make a cell span more than one row use the attribute <i>rowspan</i></li>
+              </ul>
+            </div>
+            <div class="webInfo navLoc" id="Semantic_Structure_Elements">
+              <h3>Semantic Structure Elements</h3>
+              <ul>
+                <li><i>&lt;header&gt;</i> contains the documents heading</li>
+                <li><i>&lt;main&gt;</i> contains the main unique content of the document</li>
+                <li><i>&lt;section&gt;</i> broad element for larger sections of content</li>
+                <li><i>&lt;article&gt;</i> used for blocks of content that can be read</li>
+                <li><i>&lt;aside&gt;</i> used for sidebars or grouping of nonessential elements like ads</li>
+              </ul>
+            </div>
         </span>
 
         <span id="CSS" class="navLoc">
             <h1>CSS</h1>
             <div class="webInfo navLoc" id="CSS_Styles">
-        <h2>CSS Styles</h2>
-        <h3>Inline styles</h3>
-        <ul>
-          <li>Style rules placed within an HTML element via the style attribute.</li>
-          <li><i>Example:</i> &lt;h2 style="font-size: 24pt;"&gt; Description &lt;/h2&gt;</li>
-        </ul>
-        <h3>Embedded style sheet</h3>
-        <ul>
-          <li>Style rules placed in a style tag inside the head tag.</li>
-          <li><i>Example:</i> &lt;style&gt; h2 { font-size: 24pt; } &lt;/style&gt;</li>
-        </ul>
-        <h3>External style sheet</h3>
-        <ul>
-          <li>Style rules placed within and external text file with the .css extension.</li>
-          <li>External style sheets are implemented using the link tag.</li>
-          <li><i>Example:</i> &lt;link rel="stylesheet" href="styles.css"/&gt;</li>
-        </ul>
-      </div>
+              <h2>CSS Styles</h2>
+              <h3>Inline styles</h3>
+              <ul>
+                <li>Style rules placed within an HTML element via the style attribute.</li>
+                <li><i>Example:</i> &lt;h2 style="font-size: 24pt;"&gt; Description &lt;/h2&gt;</li>
+              </ul>
+              <h3>Embedded style sheet</h3>
+              <ul>
+                <li>Style rules placed in a style tag inside the head tag.</li>
+                <li><i>Example:</i> &lt;style&gt; h2 { font-size: 24pt; } &lt;/style&gt;</li>
+              </ul>
+              <h3>External style sheet</h3>
+              <ul>
+                <li>Style rules placed within and external text file with the .css extension.</li>
+                <li>External style sheets are implemented using the link tag.</li>
+                <li><i>Example:</i> &lt;link rel="stylesheet" href="styles.css"/&gt;</li>
+              </ul>
+            </div>
 
-      <div class="webInfo navLoc" id="Selectors">
-        <h2>Selectors</h2>
-        <h3>Element Selectors</h3>
-        <ul>
-          <li>Select all instances of a give HTML element.</li>
-          <li><i>Example:</i> h2 { font-size: 24pt; }</li>
-        </ul>
-        <h3>Class Selector</h3>
-        <ul>
-          <li>Allows you to simultaneously target different HTML elements regardless of their position in the document.</li>
-          <li><i>Example:</i></li>
-          <li>&lt;style&gt; .first { font-size: 24pt; } &lt;/style&gt;</li>
-          <li>&lt;p class="first"&gt;Reviews&lt;/p&gt;</li>
-        </ul>
-        <h3>Id Selector</h3>
-        <ul>
-          <li>Allows you to target a specific element by an id attribute regardless of type or position.</li>
-          <li><i>Example:</i></li>
-          <li>&lt;style&gt; #first { font-size: 24pt; } &lt;/style&gt;</li>
-          <li>&lt;p id="first"&gt;Reviews&lt;/p&gt;</li>
-        </ul>
-        <h3>Attribute Selector</h3>
-        <ul>
-          <li>Provides a way to select HTML elements either by the presence of an element attribute or value of an attribute.</li>
-          <li><i>Example:</i></li>
-          <li>&lt;style&gt; [title] { font-size: 24pt; } &lt;/style&gt; &nbsp;&nbsp;&nbsp;<i>This will target all elements with a 'title' attribute.</i></li>
-        </ul>
-        <h3>Pseudo Selectors</h3>
-        <ul>
-          <li><u>Pseudo-element selector:</u> Select something that does not exist explicitly as an element in the HTML document by still a recognizeable object.</li>
-          <li><u>Pseudo-class selector:</u> Applies to an HTML element, but targets either a particular state, or a variety of family relationships.</li>
-          <li>Pseudo-element and Pseudo-class selectors:</li>
-          <ul>
-            <li>a:link</li>
-            <li>a:visited</li>
-            <li>:focus</li>
-            <li>:hover</li>
-            <li>:active</li>
-            <li>:checked</li>
-            <li>::first-child</li>
-            <li>::first-letter</li>
-            <li>::first-line</li>
-          </ul>
-        </ul>
-      </div>
-
+            <div class="webInfo navLoc" id="Selectors">
+              <h2>Selectors</h2>
+              <h3>Element Selectors</h3>
+              <ul>
+                <li>Select all instances of a give HTML element.</li>
+                <li><i>Example:</i> h2 { font-size: 24pt; }</li>
+              </ul>
+              <h3>Class Selector</h3>
+              <ul>
+                <li>Allows you to simultaneously target different HTML elements regardless of their position in the document.</li>
+                <li><i>Example:</i></li>
+                <li>&lt;style&gt; .first { font-size: 24pt; } &lt;/style&gt;</li>
+                <li>&lt;p class="first"&gt;Reviews&lt;/p&gt;</li>
+              </ul>
+              <h3>Id Selector</h3>
+              <ul>
+                <li>Allows you to target a specific element by an id attribute regardless of type or position.</li>
+                <li><i>Example:</i></li>
+                <li>&lt;style&gt; #first { font-size: 24pt; } &lt;/style&gt;</li>
+                <li>&lt;p id="first"&gt;Reviews&lt;/p&gt;</li>
+              </ul>
+              <h3>Attribute Selector</h3>
+              <ul>
+                <li>Provides a way to select HTML elements either by the presence of an element attribute or value of an attribute.</li>
+                <li><i>Example:</i></li>
+                <li>&lt;style&gt; [title] { font-size: 24pt; } &lt;/style&gt; &nbsp;&nbsp;&nbsp;<i>This will target all elements with a 'title' attribute.</i></li>
+              </ul>
+              <h3>Pseudo Selectors</h3>
+              <ul>
+                <li><u>Pseudo-element selector:</u> Select something that does not exist explicitly as an element in the HTML document by still a recognizeable object.</li>
+                <li><u>Pseudo-class selector:</u> Applies to an HTML element, but targets either a particular state, or a variety of family relationships.</li>
+                <li>Pseudo-element and Pseudo-class selectors:</li>
+                <ul>
+                  <li>a:link</li>
+                  <li>a:visited</li>
+                  <li>:focus</li>
+                  <li>:hover</li>
+                  <li>:active</li>
+                  <li>:checked</li>
+                  <li>::first-child</li>
+                  <li>::first-letter</li>
+                  <li>::first-line</li>
+                </ul>
+              </ul>
+            </div>
         </span>
 
-        </div></div></div>
+        </div>
+        </div>
+        </div>
 
         <div id="footer">
           <span>
