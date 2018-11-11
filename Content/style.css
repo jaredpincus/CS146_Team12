@@ -230,7 +230,7 @@ li{
 	}
 
 	#sidenav {
-		/* PUT SOMETHING HERE PLS WORK */
+		display: none;
 	}
 
 	#footer {
@@ -246,6 +246,10 @@ li{
 @media only screen and (max-width: 799px) and (min-width: 500px) {
 	#footer {
 		flex-direction: column;
+	}
+	
+	#sidenav {
+		display: none;
 	}
 
 	#footer #separator {
