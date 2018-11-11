@@ -89,6 +89,31 @@ header {
 	display: block;
 }
 
+.navTop ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navTop li {
+    float: left;
+}
+
+.navTop li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navTop li a:hover {
+    background-color: #111;
+}
+
 #headerHeader {
 	display: flex;
 	flex-direction: row;
@@ -197,13 +222,17 @@ li{
 	margin-bottom: 5px;
 }
 
-/* DESKTOP */
-@media only screen and (min-width: 800px) {
 
-}
+/* MOBILE */
+@media only screen and (max-width: 499px) {
+	header, header > * {
+		flex-direction: column;
+	}
 
-/* TABLET */
-@media only screen and (max-width: 799px) and (min-width: 500px) {
+	#sidenav {
+		/* PUT SOMETHING HERE PLS WORK */
+	}
+
 	#footer {
 		flex-direction: column;
 	}
@@ -213,12 +242,8 @@ li{
 	}
 }
 
-/* MOBILE */
-@media only screen and (max-width: 499px) {
-	header, header > * {
-		flex-direction: column;
-	}
-
+/* TABLET */
+@media only screen and (max-width: 799px) and (min-width: 500px) {
 	#footer {
 		flex-direction: column;
 	}
