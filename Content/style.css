@@ -40,6 +40,30 @@ header {
 	background: linear-gradient(to right, transparent, white, transparent);
 }
 
+/* Add a black background color to the top navigation */
+.topnav {
+		display: none;
+    background-color: var(--stevens-red);
+    overflow: hidden;
+		padding-bottom: 10px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: var(--stevens-grey);
+    color: black;
+}
+
 #sidenav {
     width: 250px;
     z-index: 0;
@@ -87,31 +111,6 @@ header {
 
 .navGroup:hover > .dropdown {
 	display: block;
-}
-
-.navTop ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-.navTop li {
-    float: left;
-}
-
-.navTop li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-.navTop li a:hover {
-    background-color: #111;
 }
 
 #headerHeader {
@@ -229,8 +228,21 @@ li{
 		flex-direction: column;
 	}
 
+	.topnav {
+		display: flex;
+		flex-direction: column;
+		position: -webkit-sticky; /* Safari */
+    position: sticky;
+		top: 0;
+	}
+
 	#sidenav {
 		display: none;
+	}
+
+	#otherstuff {
+		display: flex;
+		flex-direction: column;
 	}
 
 	#footer {
@@ -244,12 +256,25 @@ li{
 
 /* TABLET */
 @media only screen and (max-width: 799px) and (min-width: 500px) {
-	#footer {
+	.topnav {
+		display: flex;
 		flex-direction: column;
+		position: -webkit-sticky; /* Safari */
+    position: sticky;
+		top: 0;
 	}
-	
+
 	#sidenav {
 		display: none;
+	}
+
+	#otherstuff {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#footer {
+		flex-direction: column;
 	}
 
 	#footer #separator {
