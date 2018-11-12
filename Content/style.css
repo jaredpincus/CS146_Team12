@@ -230,10 +230,25 @@ li{
 
 	.topnav {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		position: -webkit-sticky; /* Safari */
     position: sticky;
 		top: 0;
+		bottom: 50px;
+	}
+
+	.topnav a {
+		flex-direction: column;
+		font-size: 70%;
+		display:block;
+		height:20px; /* fixed header height*/
+	}
+
+	.anchor{
+	  display: block;
+	  height: 40px; /*same height as header*/
+	  margin-top: 40px; /*same height as header*/
+	  visibility: hidden;
 	}
 
 	#sidenav {
@@ -258,10 +273,25 @@ li{
 @media only screen and (max-width: 799px) and (min-width: 500px) {
 	.topnav {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		position: -webkit-sticky; /* Safari */
     position: sticky;
 		top: 0;
+		bottom: 50px;
+	}
+
+	.topnav a {
+		flex-direction: column;
+		font-size: 110%;
+		display:block;
+		height:30px; /* fixed header height*/
+	}
+
+	.anchor{
+	  display: block;
+	  height: 60px; /*same height as header*/
+	  margin-top: 60px; /*same height as header*/
+	  visibility: hidden;
 	}
 
 	#sidenav {
