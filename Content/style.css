@@ -221,6 +221,66 @@ li{
 	margin-bottom: 5px;
 }
 
+#slideContainer {
+	padding-top: 30px;
+}
+
+#sad_face {
+	width:15%;
+  height: auto;
+}
+
+#herc {
+	width:13%;
+  height: 13%;
+}
+
+#slider {
+	-webkit-appearance: none;  /* Override default CSS styles */
+	appearance: none;
+	height: 15px;
+  border-radius: 10px;
+	width: 60%;
+	background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .7s; /* 0.2 seconds transition on hover */
+  transition: opacity .7s;
+}
+
+/* Mouse-over effects */
+#slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+		height: 25px;
+	 	border-radius: 50%;
+    background: var(--stevens-red); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+#slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+		height: 25px;
+    border-radius: 50%;
+    background: var(--stevens-red); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+#buttonContainer {
+	padding-top: 50px;
+
+}
+
+#textContainer {
+
+}
+
 
 /* MOBILE */
 @media only screen and (max-width: 499px) {
