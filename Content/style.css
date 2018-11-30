@@ -279,11 +279,15 @@ li{
 
 #buttonContainer {
 	padding-top: 50px;
-
 }
 
 #textContainer {
 
+}
+
+#rating_pic{
+	height: 200px;
+	width: 200px;
 }
 
 
