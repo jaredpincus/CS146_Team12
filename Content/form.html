@@ -38,6 +38,8 @@
 
              <form id="postForm">
 
+               <span id ="confidence">How confident are you?</span>
+
                <div id = "slideContainer">
                  <img id = "sad_face" src = "sad face.png"></img>
                  <input type="range" min="1" max="100" value="50" id="slider"/>
@@ -46,28 +48,43 @@
 
                <!-- gotta work on this, it'll end up being a series of buttons to rate satisfaction -->
                <div id = "buttonContainer">
+                 <span class="fadingLine2"></span>
                  <div id="buttonContainerHeader">
-                   <p>Rate satisfaction</p>
+                   <p>Rate Your Satisfaction</p>
                    <img id="rating_pic" src="baby_face.png" alt="Are you satisfied?">
                  </div>
-                 <button type="button" name="button">Crippling</button>
-                 <button type="button" name="button">No thanks</button>
-                 <button type="button" name="button">It was aight</button>
-                 <button type="button" name="button">Really gerd</button>
-                 <button type="button" name="button">Life changing</button>
+                 <input type="radio" name="button" value = 'Crippling'>
+                 <input type="radio" name="button" value = 'No thanks'>
+                 <input type="radio" name="button" value = 'It was aight'>
+                 <input type="radio" name="button" value = 'Really gerd'>
+                 <input type="radio" name="button" value = 'Life changing'>
+
                </div>
+
+               <span class="fadingLine2"></span>
 
                <div id = "textContainer">
-                 <input
-                    type="text"
-                    name="comment"
-                    id="feedback"
-                    placeholder="Did we miss anything? Give us your feedback!"
-                    required
-                 />
-               </div>
+                 <div id = "nameContainer">
+                   <form>
+                     <label for="fname">First Name</label>
+                     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-               <button>Submit Response!</button>
+                     <label for="lname">Last Name</label>
+                     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                   </form>
+                 </div>
+
+                 <div id = "responseContainer">
+                   <label for="feedback">Let Us Know What You Think!</label>
+                   <textarea
+                      name="comment"
+                      id="feedback"
+                      placeholder="Did we miss anything? Give us your feedback!"
+
+                      ></textarea>
+                 </div>
+               </div>
+               <input type="submit" value="Submit">
 
              </form>
 

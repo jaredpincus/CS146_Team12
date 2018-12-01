@@ -153,7 +153,7 @@ header {
     height: 1px;
     width: 100%;
     margin: auto;
-    background: radial-gradient(black 0%, transparent 50%);
+    background: radial-gradient(black 0%, transparent 65%);
 }
 
 #content {
@@ -221,6 +221,11 @@ li{
 	margin-bottom: 5px;
 }
 
+#confidence {
+	display: block;
+	margin-top: 30px;
+}
+
 #slideContainer {
 	display: -webkit-flex; /* Safari */
   -webkit-align-items: center; /* Safari 7.0+ */
@@ -233,11 +238,15 @@ li{
 #sad_face {
 	width:15%;
   height: auto;
+	border: none;
+	border-radius: 8px;
 }
 
 #herc {
 	width:13%;
   height: 13%;
+	border: none;
+	border-radius: 8px;
 }
 
 #slider {
@@ -277,12 +286,107 @@ li{
     cursor: pointer; /* Cursor on hover */
 }
 
-#buttonContainer {
-	padding-top: 50px;
+.fadingLine2 {
+    display: block;
+    border: none;
+    color: white;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 50px;
+    background: radial-gradient(black 0%, transparent 80%);
 }
 
-#textContainer {
+#buttonContainer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
 
+#buttonContainerHeader {
+	padding-bottom: 50px;
+}
+
+#rating_pic {
+	border: none;
+	border-radius: 8px;
+}
+
+input[type=radio] {
+    width: 25%;
+		opacity: .8;
+		transition: .8s;
+    background-color: var(--stevens-red);
+    color: white;
+    padding: 14px 20px;
+    margin: 30px 0 5px 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type=radio]:hover {
+    background-color: #4445;
+}
+
+input[type=radio]:checked {
+    background-color: var(--stevens-red);
+		opacity: 1;
+}
+
+
+#nameContainer {
+	width: auto;
+  padding: 20px;
+	float: left;
+	height: auto;
+}
+
+input[type=text], select {
+    width: 100%;
+		outline: none;
+    padding: 12px 20px;
+    margin: 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+input[type=submit] {
+    width: 60%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 30px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#responseContainer {
+	width: auto;
+	overflow: hidden;
+	height: auto;
+}
+
+#feedback {
+	margin: 20px 0;
+	width: 90%;
+	height: 200px;
+	outline: none;
+	border: none;
+	border-radius: 8px;
+}
+
+#feedback:focus {
+    border: 3px solid #555;
 }
 
 #rating_pic{
@@ -290,6 +394,12 @@ li{
 	width: 200px;
 }
 
+#submit {
+	display: inline-block;
+	align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 
 /* MOBILE */
 @media only screen and (max-width: 499px) {
