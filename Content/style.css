@@ -367,7 +367,8 @@ input[type=text]:focus {
 
 input[type=submit] {
     width: 60%;
-    background-color: #4CAF50;
+		transition: background-color 0.5s ease;
+    background-color: var(--stevens-red);
     color: white;
     padding: 14px 20px;
     margin: 30px 0;
@@ -377,7 +378,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: var(--stevens-grey);
 }
 
 #responseContainer {
