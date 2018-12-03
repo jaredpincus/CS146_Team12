@@ -27,6 +27,13 @@ function placeNav() {
 
 window.onload = placeNav;
 
+
+function updateLabel() {
+	// returns value of slider
+	var slider = document.getElementById("slider");
+	document.getElementById('confidenceRange').innerHTML = document.getElementById("slider").value;
+}
+
 window.addEventListener("load", function() {
   var cripplingbutton = document.getElementById("crippling");
   var thanksbutton = document.getElementById("no thanks");
@@ -48,6 +55,13 @@ window.addEventListener("load", function() {
   var firstname = document.getElementById('fname').value;
   var lastname = document.getElementById('lname').value;
 
+	// get the slider
+	var slider = document.getElementById("slider");
+
+	slider.addEventListener("input", function() {
+		document.getElementById('confidenceRange').innerHTML = slider.value;
+	});
+
   cripplingbutton.addEventListener("click", function() {
     rating.src = "was crippling.png"
   });
@@ -65,6 +79,7 @@ window.addEventListener("load", function() {
   });
 
   btn.addEventListener("click", function() {
+		display();
     modal.style.display = "block";
   })
 
@@ -73,6 +88,7 @@ window.addEventListener("load", function() {
   })
 
 });
+
 
 function display() {
   // Get the modal
@@ -83,13 +99,56 @@ function display() {
   var span = document.getElementsByClassName("close")[0];
   // Get the header for the modal
   var modalheader = document.getElementById("modalhead");
+	// get paragraph for the overall rating
+	var rating_paragraph = document.getElementById("rating_paragraph");
+
+	// returns value of slider
+	var slideVal = document.getElementById("confidenceRange").innerHTML;
+
+	// returns the value of the checked radio button
+	var radioChecked = document.querySelector('input[name = "satisfaction"]:checked').value;
+
+	//Calculate the "overall course rating"
+	var rating = 0;
+	var slider_rating_adjusted = Math.floor(slideVal/20);
+	var radioRating = 0;
+
+	switch(radioChecked){
+		case ('Was Crippling'):
+			radioRating = 1;
+			break
+		case ('No Thanks'):
+			radioRating = 2;
+			break
+		case ('It Was Aight'):
+			radioRating = 3;
+			break
+		case ('Really Gerd'):
+			radioRating = 4;
+			break
+		case ("Life Changing"):
+			radioRating = 5;
+			break
+	};
+
+	var rating = slider_rating_adjusted + radioRating;
 
   // get firstname and last name from form
   var firstname = document.getElementById('fname').value;
   var lastname = document.getElementById('lname').value;
 
-  // this one displays the form info on the modal
-  btn.addEventListener("click", function() {
-    modalheader.innerHTML = "So What's Your Rating: " + firstname + ' ' + lastname;
-  })
+  modalheader.innerHTML = "So What's Your Rating: " + firstname + ' ' + lastname;
+	rating_paragraph.innerHTML = "Overall Rating: " + rating.toString() + "/10";
+
+	console.log(rating);
+
+	if (rating < 4){
+		advice_paragraph.innerHTML = "Honestly, don't even bother. Just drop the class";
+	}
+	else if (rating < 8){
+		advice_paragraph.innerHTML = "I mean, maybe if you study really hard...?"
+	}
+	else {
+		advice_paragraph.innerHTML = "You actually have hope. Congrats!!"
+	}
 }

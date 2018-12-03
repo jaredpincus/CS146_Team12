@@ -36,15 +36,16 @@
         <div id="content">
           <section class="input">
 
-             <form id="postForm" onsubmit = 'return display();'>
+             <form id="postForm">
 
                <span id ="confidence">How confident are you?</span>
 
                <div id = "slideContainer">
                  <img id = "sad_face" src = "sad face.png"></img>
-                 <input type="range" min="1" max="100" value="50" id="slider"/>
+                 <input type="range" min="1" max="100" value="50" id="slider" required/>
                  <img id = "herc" src = "HunkHerc.png"></img>
                </div>
+               <label id = 'confidenceRange'></label>
 
                <!-- gotta work on this, it'll end up being a series of buttons to rate satisfaction -->
                <div id = "buttonContainer">
@@ -55,15 +56,15 @@
                    <img id="rating_pic" src="baby_face.png" alt="Are you satisfied?">
                  </div>
 
-                 <input id="crippling" value="Was Crippling" type="radio" name="size">
+                 <input id="crippling" value="Was Crippling" type="radio" name="satisfaction" required>
                  <label for="crippling">Was Crippling</label>
-                 <input id="no thanks" value="No Thanks" type="radio" name="size">
+                 <input id="no thanks" value="No Thanks" type="radio" name="satisfaction">
                  <label for="no thanks">No Thanks</label>
-                 <input id="it was aight" value="It Was Aight" type="radio" name="size">
+                 <input id="it was aight" value="It Was Aight" type="radio" name="satisfaction">
                  <label for="it was aight">It Was Aight</label>
-                 <input id="really gerd" value="Really Gerd" type="radio" name="size">
+                 <input id="really gerd" value="Really Gerd" type="radio" name="satisfaction">
                  <label for="really gerd">Really Gerd</label>
-                 <input id="life changing" value="Life Changing" type="radio" name="size">
+                 <input id="life changing" value="Life Changing" type="radio" name="satisfaction">
                  <label for="life changing">Life Changing</label>
 
 
@@ -75,10 +76,10 @@
                  <div id = "nameContainer">
                    <form>
                      <label for="fname">First Name</label>
-                     <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                     <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
 
                      <label for="lname">Last Name</label>
-                     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                     <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
                    </form>
                  </div>
 
@@ -106,14 +107,15 @@
           <div class="modal-content">
             <div class="modal-header">
               <span class="close">&times;</span>
-              <h2 id = "modalhead">So What's Your Rating: </h2>
+              <h2 id = "modalhead"></h2>
             </div>
             <div class="modal-body">
-              <p>Some text in the Modal Body</p>
-              <p>Some other text...</p>
+              <p id = "rating_paragraph"></p>
+              <p>Predicted Performance On Final Exam: </p>
+              <p id = "advice_paragraph"></p>
             </div>
             <div class="modal-footer">
-              <h3>Good luck on your finals?</h3>
+              <h3>Good luck on your finals....?</h3>
             </div>
           </div>
 
