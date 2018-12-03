@@ -37,12 +37,16 @@ window.addEventListener("load", function() {
 
   // Get the modal
   var modal = document.getElementById('myModal');
-
   // Get the button that opens the modal
   var btn = document.getElementById("submitbutton");
-
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
+  // Get the header for the modal
+  var modalheader = document.getElementById("modalhead");
+
+  // get firstname and last name from form
+  var firstname = document.getElementById('fname').value;
+  var lastname = document.getElementById('lname').value;
 
   cripplingbutton.addEventListener("click", function() {
     rating.src = "was crippling.png"
@@ -69,3 +73,23 @@ window.addEventListener("load", function() {
   })
 
 });
+
+function display() {
+  // Get the modal
+  var modal = document.getElementById('myModal');
+  // Get the button that opens the modal
+  var btn = document.getElementById("submitbutton");
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  // Get the header for the modal
+  var modalheader = document.getElementById("modalhead");
+
+  // get firstname and last name from form
+  var firstname = document.getElementById('fname').value;
+  var lastname = document.getElementById('lname').value;
+
+  // this one displays the form info on the modal
+  btn.addEventListener("click", function() {
+    modalheader.innerHTML = "So What's Your Rating: " + firstname + ' ' + lastname;
+  })
+}

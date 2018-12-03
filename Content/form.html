@@ -36,7 +36,7 @@
         <div id="content">
           <section class="input">
 
-             <form id="postForm">
+             <form id="postForm" onsubmit = 'return display();'>
 
                <span id ="confidence">How confident are you?</span>
 
@@ -106,7 +106,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <span class="close">&times;</span>
-              <h2>So What's Your Rating?</h2>
+              <h2 id = "modalhead">So What's Your Rating: </h2>
             </div>
             <div class="modal-body">
               <p>Some text in the Modal Body</p>
